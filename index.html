@@ -3,9 +3,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Okere Nonye — Graphic Designer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#home" class="nav-logo">Nonye<span>.</span></a>
+        <button class="hamburger" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home / Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Okere Nonye</h1>
+                <h2 class="hero-role">Graphic Designer</h2>
+                <p class="hero-bio">
+                    A graphic designer with 3 years of experience in brand identity,
+                    UI/UX, print design, and motion graphics. I create visuals that
+                    communicate clearly and leave a lasting impression.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/photo.jpeg" alt="Okere Nonye">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Skills &amp; Expertise</h2>
+            <p class="section-subtitle">3 years of hands-on design experience across multiple disciplines</p>
+
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Brand Identity Design</span>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="90"></div>
+                    </div>
+                    <p class="skill-desc">Logo systems, brand guidelines, visual language</p>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Print &amp; Editorial Design</span>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="85"></div>
+                    </div>
+                    <p class="skill-desc">Brochures, magazines, posters, packaging</p>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">UI/UX Design</span>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="80"></div>
+                    </div>
+                    <p class="skill-desc">Web/app interfaces, wireframes, prototyping</p>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Motion Graphics</span>
+                        <span class="skill-percent">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="75"></div>
+                    </div>
+                    <p class="skill-desc">Animated logos, social media content, video graphics</p>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Typography</span>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="85"></div>
+                    </div>
+                    <p class="skill-desc">Custom lettering, type pairing, font selection</p>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Illustration</span>
+                        <span class="skill-percent">70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="70"></div>
+                    </div>
+                    <p class="skill-desc">Custom artwork, icons, infographics, character design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">A selection of design work across branding, editorial, UI/UX, and more</p>
+
+            <div class="projects-grid">
+                <div class="project-card project-wide">
+                    <img src="images/aurelie.png" alt="Aurélie Fashion Brand Identity">
+                    <div class="project-overlay">
+                        <span class="project-tag">Brand Identity</span>
+                        <h3>Aurélie Fashion Brand Identity</h3>
+                        <p>Complete brand identity system for a Lagos-based fashion label — logo, color palette, typography, and brand guidelines.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/lagos-food-festival.png" alt="Lagos Food Festival Posters">
+                    <div class="project-overlay">
+                        <span class="project-tag">Print &amp; Editorial</span>
+                        <h3>Lagos Food Festival Posters</h3>
+                        <p>Promotional poster series for an annual food festival celebrating Nigerian cuisine and culture.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/finpay.png" alt="FinPay Mobile App UI">
+                    <div class="project-overlay">
+                        <span class="project-tag">UI/UX Design</span>
+                        <h3>FinPay Mobile App UI</h3>
+                        <p>Fintech app interface design with focus on clean navigation and accessible transaction flows.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/afrobeats-night.png" alt="Afrobeat Nights Social Campaign">
+                    <div class="project-overlay">
+                        <span class="project-tag">Motion Graphics</span>
+                        <h3>Afrobeats Nights Campaign</h3>
+                        <p>Social media campaign visuals and animated content for a weekly Afrobeats nightlife event.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/heritage-typeface.png" alt="Heritage Typeface Specimen">
+                    <div class="project-overlay">
+                        <span class="project-tag">Typography</span>
+                        <h3>Heritage Typeface Specimen</h3>
+                        <p>A display typeface inspired by Nigerian script traditions, showcased through a specimen booklet.</p>
+                    </div>
+                </div>
+
+                <div class="project-card project-wide">
+                    <img src="images/eco-lagos.png" alt="EcoLagos Infographic Series">
+                    <div class="project-overlay">
+                        <span class="project-tag">Illustration</span>
+                        <h3>EcoLagos Infographic Series</h3>
+                        <p>Data-driven infographics illustrating environmental initiatives and sustainability efforts across Lagos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Have a project in mind? Let's work together.</p>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4>Email</h4>
+                        <p>okerenonye@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Location</h4>
+                        <p>Oti-Osa, Lagos State, Nigeria</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Social</h4>
+                        <div class="social-links">
+                            <a href="https://instagram.com/nonisaidso_" target="_blank" rel="noopener">Instagram</a>
+                            <a href="https://github.com/nonyokere-design" target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" onsubmit="return false;">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="you@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="What's this about?">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Okere Nonye. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
