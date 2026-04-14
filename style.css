@@ -18,6 +18,7 @@
     --dark: #1A1A1A;
     --gray: #6B6B6B;
     --light-gray: #E8E8E8;
+    --placeholder: #A8A8A8;
     --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
     --transition: 0.3s ease;
 }
@@ -67,6 +68,11 @@ img {
     cursor: pointer;
     transition: all var(--transition);
     border: 2px solid transparent;
+}
+
+.btn:focus-visible {
+    outline: 3px solid var(--red);
+    outline-offset: 3px;
 }
 
 .btn-primary {
@@ -125,6 +131,7 @@ img {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--dark);
+    padding: 8px 0;
 }
 
 .nav-logo span {
@@ -166,12 +173,18 @@ img {
     width: 100%;
 }
 
+.nav-links a:focus-visible {
+    outline: 2px solid var(--red);
+    outline-offset: 4px;
+    border-radius: 2px;
+}
+
 .hamburger {
     display: none;
     background: none;
     border: none;
     cursor: pointer;
-    padding: 8px;
+    padding: 10px;
     flex-direction: column;
     gap: 5px;
     z-index: 1001;
@@ -356,7 +369,7 @@ img {
    PROJECTS — BENTO GRID
    ======================== */
 .projects-section {
-    padding: 100px 0;
+    padding: 110px 0;
     background: var(--off-white);
 }
 
@@ -460,7 +473,7 @@ img {
    CONTACT
    ======================== */
 .contact-section {
-    padding: 100px 0;
+    padding: 90px 0;
 }
 
 .contact-grid {
@@ -504,6 +517,7 @@ img {
     font-weight: 600;
     font-size: 0.95rem;
     transition: color var(--transition);
+    padding: 10px 0;
 }
 
 .social-icon {
@@ -549,12 +563,14 @@ img {
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: #b0b0b0;
+    color: var(--placeholder);
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     border-color: var(--red);
+    outline: 3px solid rgba(196, 30, 58, 0.2);
+    outline-offset: 0;
 }
 
 .form-group textarea {
@@ -623,6 +639,7 @@ img {
     /* Mobile nav */
     .hamburger {
         display: flex;
+        padding: 14px 10px;
     }
 
     .nav-links {
@@ -646,6 +663,8 @@ img {
 
     .nav-links a {
         font-size: 1.1rem;
+        display: block;
+        padding: 10px 0;
     }
 
     .hamburger.active span:nth-child(1) {
@@ -698,5 +717,33 @@ img {
 
     .project-card.project-wide {
         aspect-ratio: 16 / 10;
+    }
+}
+
+/* ========================
+   REDUCED MOTION
+   ======================== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+
+    .skill-fill {
+        transition: none;
+    }
+
+    .project-card img {
+        transition: none;
+    }
+
+    .project-overlay::after {
+        transition: none;
+    }
+
+    html {
+        scroll-behavior: auto;
     }
 }
